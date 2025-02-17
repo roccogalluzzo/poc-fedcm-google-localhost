@@ -1,0 +1,19 @@
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<h2>Sign in with Google</h2>
+
+<div id="g_id_onload"
+     data-client_id="1036105477366-nmka3ges98gilv4i472n1j1ljv5mpb8m.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-callback="handleCredentialResponse"
+data-native_fedcm="true"
+     data-auto_select="true">
+</div>
+
+<div class="g_id_signin" data-type="standard"></div>
+
+<script>
+  function handleCredentialResponse(response) {
+    console.log("Google JWT Token:", response.credential);
+  }
+</script>
